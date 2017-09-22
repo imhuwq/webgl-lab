@@ -35,7 +35,7 @@ function main() {
     }
 
     var u_FragColor = gl.getUniformLocation(gl.program, 'u_FragColor');
-    if (u_FragColor < 0) {
+    if (! u_FragColor) {
         console.log("failed to get the storage location of u_FragColor");
         return;
     }
